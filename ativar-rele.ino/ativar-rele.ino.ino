@@ -13,10 +13,12 @@ void setup() {
 }
 
 void loop() {
-  
+  //verifica o estado do pino do botao, deve estar no gnd ou 5v
   if(digitalRead(botao1)==HIGH){
+  	// desliga 
     digitalWrite(rele1, HIGH);
   }else{
+  	// liga
     digitalWrite(rele1, LOW);
   }  
 }
